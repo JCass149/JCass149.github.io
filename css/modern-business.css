@@ -32,6 +32,7 @@ body {
 .fa {
   padding: 20px;
   font-size: 30px;
+  width: 55px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -50,4 +51,9 @@ body {
 .fa-linkedin {
   background: #007bb5;
   color: white;
+}
+
+.py-5 {
+    padding-top: 1.5rem!important;
+    padding-bottom: 1.5rem!important;
 }
