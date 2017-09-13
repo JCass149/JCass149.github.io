@@ -23,9 +23,9 @@ body {
 	
 	
 .carousel-item {
-    /*height: 30vw;
+    /*height: 30vw;*/
     min-height: 200px;
-    max-height: 400px;*/
+    max-height: 400px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
