@@ -4,9 +4,23 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
 
+ html, body {
+    height: 100%;
+  }
+  
 body {
-    padding-top: 54px;
+    display: flex;
+    flex-direction: column;
 }
+
+.content{
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
 
 @media (min-width: 992px) {
     body {
@@ -61,6 +75,11 @@ body {
   background: #007bb5;
   color: white;
 }
+
+.fa-github {
+    background: gray;
+    color: white;
+  }
 
 .py-5 {
     padding-top: 1.5rem!important;

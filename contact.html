@@ -16,120 +16,118 @@
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
 
-    <!-- Icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </head>
 
 <body>
+    <div class="content">
+        <!--Navigation bar-->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div id="nav-placeholder">
+            </div>
+        </nav>
 
-    <!--Navigation bar-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div id="nav-placeholder">
+        <script>
+            $(function () {
+                //should be "navbar.html" but CORS prevents local testing without server
+                $("#nav-placeholder").load("https://jcass149.github.io/navbar");
+            });
+        </script>
+        <!--end of Navigation bar-->
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <!-- Page Heading/Breadcrumbs -->
+            <h1 class="mt-4 mb-3">Contact</h1>
+
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item active">Contact</li>
+            </ol>
+
+            <!-- Content Row -->
+            <div class="row">
+
+                <!-- Contact Details Column -->
+                <div class="col-lg-4 mb-4">
+                    <h3>Contact Details</h3>
+                    <p>
+                        <abbr title="Phone">P</abbr>: 07429698156
+                    </p>
+                    <p>
+                        <abbr title="Email">E</abbr>: <a href="mailto:josephcass149@gmail.com">josephcass149@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- Contact Form -->
+            <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+            <div class="row">
+                <div class="col-lg-8 mb-4">
+                    <h3>Got a question? Send me a message</h3>
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Full Name:</label>
+                                <input type="text" class="form-control" id="name" required
+                                    data-validation-required-message="Please enter your name.">
+                                <p class="help-block"></p>
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Phone Number:</label>
+                                <input type="tel" class="form-control" id="phone" required
+                                    data-validation-required-message="Please enter your phone number.">
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Email Address:</label>
+                                <input type="email" class="form-control" id="email" required
+                                    data-validation-required-message="Please enter your email address.">
+                            </div>
+                        </div>
+                        <div class="control-group form-group">
+                            <div class="controls">
+                                <label>Message:</label>
+                                <textarea rows="10" cols="100" class="form-control" id="message" required
+                                    data-validation-required-message="Please enter your message" maxlength="999"
+                                    style="resize:none"></textarea>
+                            </div>
+                        </div>
+                        <div id="success"></div>
+                        <!-- For success/fail messages -->
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+            <!-- /.row -->
+
         </div>
-    </nav>
+        <!-- /.container -->
+
+    </div>
+
+    <!--Footer-->
+    <div id="footer-placeholder">
+    </div>
 
     <script>
         $(function () {
-            //should be "navbar.html" but CORS prevents local testing without server
-            $("#nav-placeholder").load("https://jcass149.github.io/navbar");
+            //should be "footer.html" but CORS prevents local testing without server
+            $("#footer-placeholder").load("https://jcass149.github.io/footer");
         });
     </script>
-    <!--end of Navigation bar-->
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Page Heading/Breadcrumbs -->
-        <h1 class="mt-4 mb-3">Contact</h1>
-
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="breadcrumb-item active">Contact</li>
-        </ol>
-
-        <!-- Content Row -->
-        <div class="row">
-
-            <!-- Contact Details Column -->
-            <div class="col-lg-4 mb-4">
-                <h3>Contact Details</h3>
-                <p>
-                    <abbr title="Phone">P</abbr>: 07429698156
-                </p>
-                <p>
-                    <abbr title="Email">E</abbr>: <a href="mailto:josephcass149@gmail.com">josephcass149@gmail.com
-                    </a>
-                </p>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Contact Form -->
-        <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-        <div class="row">
-            <div class="col-lg-8 mb-4">
-                <h3>Got a question? Send me a message</h3>
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Full Name:</label>
-                            <input type="text" class="form-control" id="name" required
-                                data-validation-required-message="Please enter your name.">
-                            <p class="help-block"></p>
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Phone Number:</label>
-                            <input type="tel" class="form-control" id="phone" required
-                                data-validation-required-message="Please enter your phone number.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Email Address:</label>
-                            <input type="email" class="form-control" id="email" required
-                                data-validation-required-message="Please enter your email address.">
-                        </div>
-                    </div>
-                    <div class="control-group form-group">
-                        <div class="controls">
-                            <label>Message:</label>
-                            <textarea rows="10" cols="100" class="form-control" id="message" required
-                                data-validation-required-message="Please enter your message" maxlength="999"
-                                style="resize:none"></textarea>
-                        </div>
-                    </div>
-                    <div id="success"></div>
-                    <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container" style="text-align:center">
-            <p class="m-0 text-center text-white">Copyright &copy; Joseph Cass 2017</p>
-            <!-- icons -->
-            <a href="https://www.facebook.com/joe.cass.5" class="fa fa-facebook"></a>
-            <a href="https://www.linkedin.com/in/joseph-cass" class="fa fa-linkedin"></a>
-        </div>
-
-        <!-- /.container -->
-    </footer>
+    <!--end of Footer-->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

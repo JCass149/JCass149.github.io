@@ -87,13 +87,17 @@
     </div>
     <!-- /.container -->
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-        </div>
-        <!-- /.container -->
-    </footer>
+    <!--Footer-->
+    <div id="footer-placeholder">
+    </div>
+
+    <script>
+        $(function () {
+            //should be "footer.html" but CORS prevents local testing without server
+            $("#footer-placeholder").load("https://jcass149.github.io/footer");
+        });
+    </script>
+    <!--end of Footer-->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

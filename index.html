@@ -26,118 +26,119 @@
 </head>
 
 <body>
-
-    <!--Navigation bar-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="content">
+        <!--Navigation bar-->
         <div id="nav-placeholder">
         </div>
-    </nav>
 
-    <script>
-        $(function () {
-            //should be "navbar.html" but CORS prevents local testing without server
-            $("#nav-placeholder").load("https://jcass149.github.io/navbar");
-        });
-    </script>
-    <!--end of Navigation bar-->
+        <script>
+            $(function () {
+                //should be "navbar.html" but CORS prevents local testing without server
+                $("#nav-placeholder").load("https://jcass149.github.io/navbar");
+            });
+        </script>
+        <!--end of Navigation bar-->
 
-    <header>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active"
-                    style="height: 30vw; background-image: url('https://jcass149.github.io/IMAGES/test1.jpg')">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Determined</h3>
-                        <p>to achieve the best possible outcome in any situation</p>
+        <header>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <!-- Slide One - Set the background image for this slide in the line below -->
+                    <div class="carousel-item active"
+                        style="height: 30vw; background-image: url('https://jcass149.github.io/IMAGES/test1.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Determined</h3>
+                            <p>to achieve the best possible outcome in any situation</p>
+                        </div>
+                    </div>
+                    <!-- Slide Two - Set the background image for this slide in the line below -->
+                    <div class="carousel-item"
+                        style="height: 30vw; background-image: url('https://jcass149.github.io/IMAGES/test2.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Flexible</h3>
+                            <p>to the demands of a rapidly evolving industry</p>
+                        </div>
+                    </div>
+                    <!-- Slide Three - Set the background image for this slide in the line below -->
+                    <div class="carousel-item"
+                        style="height: 30vw; background-image: url('https://jcass149.github.io/IMAGES/test3.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Motivated</h3>
+                            <p>to approach each day with a positive and well driven mind-set</p>
+                        </div>
                     </div>
                 </div>
-                <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item"
-                    style="height: 30vw; background-image: url('https://jcass149.github.io/IMAGES/test2.jpg')">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Flexible</h3>
-                        <p>to the demands of a rapidly evolving industry</p>
-                    </div>
-                </div>
-                <!-- Slide Three - Set the background image for this slide in the line below -->
-                <div class="carousel-item"
-                    style="height: 30vw; background-image: url('https://jcass149.github.io/IMAGES/test3.jpg')">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>Motivated</h3>
-                        <p>to approach each day with a positive and well driven mind-set</p>
-                    </div>
-                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </header>
+        </header>
 
-    <!-- Page Content -->
-    <div class="container">
-        <h1 class="my-4">Software Developer with a 1st class master's degree in Computer Science from the University of
-            Durham</h1>
+        <!-- Page Content -->
+        <div class="container">
+            <h1 class="my-4">Software Developer with a 1st class master's degree in Computer Science from the University
+                of
+                Durham</h1>
 
 
-        <!-- Marketing Icons Section -->
-        <div class="row" style="text-align:center">
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100">
-                    <h4 class="card-header">Academic</h4>
-                    <div class="card-body">
-                        <p class="card-text">Through studying in the field of Computer Science, I've worked on numerous
-                            different projects, developing skills and gaining knowledge in a range of areas</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="academic.html" class="btn btn-primary">Learn More</a>
+            <!-- Marketing Icons Section -->
+            <div class="row" style="text-align:center">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Academic</h4>
+                        <div class="card-body">
+                            <p class="card-text">Through studying in the field of Computer Science, I've worked on
+                                numerous
+                                different projects, developing skills and gaining knowledge in a range of areas</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="academic.html" class="btn btn-primary">Learn More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100">
-                    <h4 class="card-header">Extra Curricular</h4>
-                    <div class="card-body">
-                        <p class="card-text">Beyond studying, I've worked individually on projects, and also worked in
-                            both small and large teams to produce effective, elegant and intuitive solutions for clients
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="extra-curricular.html" class="btn btn-primary">Learn More</a>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Extra Curricular</h4>
+                        <div class="card-body">
+                            <p class="card-text">Beyond studying, I've worked individually on projects, and also worked
+                                in
+                                both small and large teams to produce effective, elegant and intuitive solutions for
+                                clients
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="extra-curricular.html" class="btn btn-primary">Learn More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100">
-                    <h4 class="card-header">Personal</h4>
-                    <div class="card-body">
-                        <p class="card-text">In my spare time I enjoy a diverse range of activities and hobbies. Click
-                            below to find out more</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="personal.html" class="btn btn-primary">Learn More</a>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Personal</h4>
+                        <div class="card-body">
+                            <p class="card-text">In my spare time I enjoy a diverse range of activities and hobbies.
+                                Click
+                                below to find out more</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="personal.html" class="btn btn-primary">Learn More</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!--Footer-->
-    <footer class="py-5 bg-dark">
-        <div id="footer-placeholder">
-        </div>
-    </footer>
+    <div id="footer-placeholder">
+    </div>
 
     <script>
         $(function () {
