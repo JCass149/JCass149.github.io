@@ -15,46 +15,31 @@
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
-	
-	<!-- Icon library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!--Navigation bar-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="https://www.linkedin.com/in/joseph-cass">Joseph Cass</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Portfolio
-                        </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                        <a class="dropdown-item" href="academic.html">Academic</a>
-                        <a class="dropdown-item" href="extra-curricular.html">Extra Curricuar</a>
-                        <a class="dropdown-item" href="personal.html">Personal</a>
-
-                    </div>
-                </li>
-            </ul>
+        <div id="nav-placeholder">
         </div>
     </nav>
+
+    <script>
+        $(function () {
+            //should be "navbar.html" but CORS prevents local testing without server
+            $("#nav-placeholder").load("https://jcass149.github.io/navbar");
+        });
+    </script>
+    <!--end of Navigation bar-->
 
     <!-- Page Content -->
     <div class="container">
@@ -72,75 +57,89 @@
         <div class="row">
             <div class="col-lg-6 portfolio-item">
                 <div class="card h-100">
-                    <a href="https://www.youtube.com/watch?v=u9SOpEFVDK0"><img class="card-img-top" src="https://jcass149.github.io/IMAGES/FreshersWeekVideo.PNG" alt=""></a>
+                    <a href="https://www.youtube.com/watch?v=u9SOpEFVDK0"><img class="card-img-top"
+                            src="https://jcass149.github.io/IMAGES/FreshersWeekVideo.PNG" alt=""></a>
                     <div class="card-body">
-                        <h4 class="card-title"><a href="https://www.youtube.com/watch?v=u9SOpEFVDK0">Freshers' week montage video</a></h4>
-                        <p class="card-text">Producing the video involving planning, filming and editing the different shots on a range of devices and settings. Watch it here: https://www.youtube.com/watch?v=u9SOpEFVDK0 </p>
+                        <h4 class="card-title"><a href="https://www.youtube.com/watch?v=u9SOpEFVDK0">Freshers' week
+                                montage video</a></h4>
+                        <p class="card-text">Producing the video involving planning, filming and editing the different
+                            shots on a range of devices and settings. Watch it here:
+                            https://www.youtube.com/watch?v=u9SOpEFVDK0 </p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 portfolio-item">
                 <div class="card h-100">
-                    <a href="https://www.razorblue.com/"><img class="card-img-top" src="https://jcass149.github.io/IMAGES/razorblue.jpg" alt=""></a>
+                    <a href="https://www.razorblue.com/"><img class="card-img-top"
+                            src="https://jcass149.github.io/IMAGES/razorblue.jpg" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title"><a href="https://www.razorblue.com/">Technical Summer Intern</a></h4>
-                        <p class="card-text">Took part in a 10 week summer internship involving replacing the company's monitoring system with a more elegant and efficient solution</p>
+                        <p class="card-text">Took part in a 10 week summer internship involving replacing the company's
+                            monitoring system with a more elegant and efficient solution</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 portfolio-item">
                 <div class="card h-100">
-						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-								<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-							</ol>
-							<div class="carousel-inner" role="listbox">
-								<!-- Slide One - Set the background image for this slide in the line below -->
-								<div class="carousel-item active" style="height: 50vw; min-height: 200px; max-height: 1200px; background-image: url('https://jcass149.github.io/IMAGES/SCfilters1.png')">
-									<div class="carousel-caption d-none d-md-block">
-									</div>
-								</div>
-								<!-- Slide Two - Set the background image for this slide in the line below -->
-								<div class="carousel-item" style="height: 50vw; min-height: 200px; max-height: 1200px; background-image: url('https://jcass149.github.io/IMAGES/SCfilters2.png')">
-									<div class="carousel-caption d-none d-md-block">
-									</div>
-								</div>
-								<!-- Slide Three - Set the background image for this slide in the line below -->
-								<div class="carousel-item" style="height: 50vw; min-height: 200px; max-height: 1200px; background-image: url('https://jcass149.github.io/IMAGES/Cover.JPG')">
-									<div class="carousel-caption d-none d-md-block">
-									</div>
-								</div>
-								<!-- Slide Three - Set the background image for this slide in the line below -->
-								<div class="carousel-item" style="height: 50vw; min-height: 200px; max-height: 1200px; background-image: url('https://jcass149.github.io/IMAGES/tshirts.JPG')">
-									<div class="carousel-caption d-none d-md-block">
-									</div>
-								</div>
-								<!-- Slide Three - Set the background image for this slide in the line below -->
-								<div class="carousel-item" style="height: 50vw; min-height: 200px; max-height: 1200px; background-image: url('https://jcass149.github.io/IMAGES/tshirts2.PNG')">
-									<div class="carousel-caption d-none d-md-block">
-									</div>
-								</div>
-							</div>
-							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only">Previous</span>
-							</a>
-							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only">Next</span>
-							</a>
-						</div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <!-- Slide One - Set the background image for this slide in the line below -->
+                            <div class="carousel-item active"
+                                style="height: 50vw; min-height: 200px; max-height: 1200px; background-image: url('https://jcass149.github.io/IMAGES/SCfilters1.png')">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <!-- Slide Two - Set the background image for this slide in the line below -->
+                            <div class="carousel-item"
+                                style="height: 50vw; min-height: 200px; max-height: 1200px; background-image: url('https://jcass149.github.io/IMAGES/SCfilters2.png')">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <!-- Slide Three - Set the background image for this slide in the line below -->
+                            <div class="carousel-item"
+                                style="height: 50vw; min-height: 200px; max-height: 1200px; background-image: url('https://jcass149.github.io/IMAGES/Cover.JPG')">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <!-- Slide Three - Set the background image for this slide in the line below -->
+                            <div class="carousel-item"
+                                style="height: 50vw; min-height: 200px; max-height: 1200px; background-image: url('https://jcass149.github.io/IMAGES/tshirts.JPG')">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <!-- Slide Three - Set the background image for this slide in the line below -->
+                            <div class="carousel-item"
+                                style="height: 50vw; min-height: 200px; max-height: 1200px; background-image: url('https://jcass149.github.io/IMAGES/tshirts2.PNG')">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                     <div class="card-body">
                         <h4 class="card-title"><a href="#">Freshers' week head of digital design</a></h4>
-                        <p class="card-text">Created many digital design elements including snapchat filters, T-shirt designs, wristband designs and more</p>
+                        <p class="card-text">Created many digital design elements including snapchat filters, T-shirt
+                            designs, wristband designs and more</p>
                     </div>
                 </div>
             </div>
-		</div>
+        </div>
     </div>
     <!-- /.container -->
 
@@ -148,10 +147,10 @@
     <footer class="py-5 bg-dark">
         <div class="container" style="text-align:center">
             <p class="m-0 text-center text-white">Copyright &copy; Joseph Cass 2017</p>
-			<!-- icons -->
-			<a href="https://www.facebook.com/joe.cass.5" class="fa fa-facebook"></a>
-			<a href="https://www.linkedin.com/in/joseph-cass" class="fa fa-linkedin"></a>
-			</div>
+            <!-- icons -->
+            <a href="https://www.facebook.com/joe.cass.5" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/joseph-cass" class="fa fa-linkedin"></a>
+        </div>
 
         <!-- /.container -->
     </footer>

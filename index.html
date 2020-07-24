@@ -35,7 +35,8 @@
 
     <script>
         $(function () {
-            $("#nav-placeholder").load("navbar.html");
+            //should be "navbar.html" but CORS prevents local testing without server
+            $("#nav-placeholder").load("https://jcass149.github.io/navbar");
         });
     </script>
     <!--end of Navigation bar-->
@@ -132,18 +133,17 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container" style="text-align:center">
-            <p class="m-0 text-center text-white">Copyright &copy; Joseph Cass
-                <script>var dt = new Date();
-                    document.write(dt.getFullYear())</script>
-            </p>
-            <!-- icons -->
-            <a href="https://www.facebook.com/joe.cass.5" class="fa fa-facebook"></a>
-            <a href="https://www.linkedin.com/in/joseph-cass" class="fa fa-linkedin"></a>
-        </div>
-    </footer>
+    <!--Footer-->
+    <div id="footer-placeholder">
+    </div>
+
+    <script>
+        $(function () {
+            //should be "navbar.html" but CORS prevents local testing without server
+            $("#footer-placeholder").load("https://jcass149.github.io/footer");
+        });
+    </script>
+    <!--end of Footer-->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
