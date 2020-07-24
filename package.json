@@ -30,10 +30,9 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "lodash": "^4.17.19",
-    "popper.js": "^1.11.1"
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.10",
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.26.10"
   }
 }
