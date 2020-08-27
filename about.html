@@ -24,15 +24,12 @@
 <body>
     <div class="content">
         <!--Navigation bar-->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div id="nav-placeholder">
-            </div>
-        </nav>
+        <div id="nav-placeholder">
+        </div>
 
         <script>
             $(function () {
-                //should be "navbar.html" but CORS prevents local testing without server
-                $("#nav-placeholder").load("https://jcass149.github.io/navbar");
+                $("#nav-placeholder").load("navbar.html");
             });
         </script>
         <!--end of Navigation bar-->
@@ -53,31 +50,32 @@
             <!-- Intro Content -->
             <div class="row">
                 <div class="col-lg-6">
-                    <img class="img-fluid rounded mt-4" src="https://jcass149.github.io/IMAGES/joe3.jpg" alt="">
+                    <img class="img-fluid rounded" src="/IMAGES/joe3.jpg" alt="">
+                    <!-- https://jcass149.github.io/IMAGES/joe2.jpg-->
                 </div>
                 <div class="col-lg-6">
                     <h2>About Me</h2>
-                    <p>I’m a an innovative and enthusiastic Computer Scientist and studied at the University
+                    <p>I’m an innovative and enthusiastic Computer Scientist who studied at the University
                         of Durham from 2015-2019. </p>
                     <p>Born in Stockton-On-Tees, I moved to Durham to study in the field of computing, after discovering
-                        agenuine desire to better understand how technology works, and how it can be used for countless
+                        a genuine desire to better understand how technology works, and how it can be used for countless
                         amazing things, from medical research to improving quality of life through efficiency and
                         inter-connectivity.</p>
                     <p>Throughout my time studying, I’ve learned how the technology we use
                         everyday functions, networked with some extremely talented individuals, and competed at levels
-                        of sport I
-                        never thought I’d be able to.</p>
+                        of sport I never thought I’d be able to.</p>
                 </div>
             </div>
             <!-- /.row -->
 
             <!-- Team Members -->
+            <p></p>
             <h2>Referees</h2>
 
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <div class="card h-100 text-center">
-                        <img class="card-img-top" src="https://jcass149.github.io/IMAGES/razorblue.jpg" alt="">
+                        <img class="card-img-top" src="/IMAGES/razorblue.jpg" alt="">
                         <div class="card-body">
                             <h4 class="card-title">Mr David Raper</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Position- Operations Director</h6>
@@ -94,7 +92,7 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="card h-100 text-center">
-                        <img class="card-img-top" src="https://jcass149.github.io/IMAGES/ssfc.png" alt="">
+                        <img class="card-img-top" src="/IMAGES/ssfc.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title">Mr Tim Selkirk</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Position- A-level Maths and Further Maths teacher
@@ -112,7 +110,7 @@
                 </div>
                 <div class="col-lg-4 mb-4">
                     <div class="card h-100 text-center">
-                        <img class="card-img-top" src="https://jcass149.github.io/IMAGES/Newlook.png" alt="">
+                        <img class="card-img-top" src="/IMAGES/Newlook.png" alt="">
                         <div class="card-body">
                             <h4 class="card-title">Mrs Marie Russell</h4>
                             <h6 class="card-subtitle mb-2 text-muted">Position- Manager</h6>
@@ -135,14 +133,14 @@
         <!-- /.container -->
 
     </div>
+
     <!--Footer-->
     <div id="footer-placeholder">
     </div>
 
     <script>
         $(function () {
-            //should be "footer.html" but CORS prevents local testing without server
-            $("#footer-placeholder").load("https://jcass149.github.io/footer");
+            $("#footer-placeholder").load("footer.html");
         });
     </script>
     <!--end of Footer-->

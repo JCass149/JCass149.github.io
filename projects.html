@@ -24,15 +24,12 @@
 <body>
     <div class="content">
         <!--Navigation bar-->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div id="nav-placeholder">
-            </div>
-        </nav>
+        <div id="nav-placeholder">
+        </div>
 
         <script>
             $(function () {
-                //should be "navbar.html" but CORS prevents local testing without server
-                $("#nav-placeholder").load("https://jcass149.github.io/navbar");
+                $("#nav-placeholder").load("navbar.html");
             });
         </script>
         <!--end of Navigation bar-->
@@ -176,8 +173,7 @@
 
     <script>
         $(function () {
-            //should be "footer.html" but CORS prevents local testing without server
-            $("#footer-placeholder").load("https://jcass149.github.io/footer");
+            $("#footer-placeholder").load("footer.html");
         });
     </script>
     <!--end of Footer-->
