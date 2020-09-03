@@ -50,55 +50,136 @@
             <div class="row">
 
                 <!-- Blog Entries Column -->
+
+
+
                 <div class="col-md-8">
 
-                    <!-- Blog Post -->
-                    <div class="card mb-4">
-                        <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-                        <div class="card-body">
-                            <h2 class="card-title">Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-                                aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis
-                                animi
-                                vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Posted on January 1, 2017 by <a href="#">Start Bootstrap</a>
-                        </div>
-                    </div>
+                    <div id="projectsContainer"></div>
 
-                    <!-- Blog Post -->
-                    <div class="card mb-4">
-                        <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-                        <div class="card-body">
-                            <h2 class="card-title">Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-                                aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis
-                                animi
-                                vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Posted on January 1, 2017 by <a href="#">Start Bootstrap</a>
-                        </div>
-                    </div>
+                    <script>
+                        var projects =
+                            [
+                                {
+                                    title: "Image Processing",
+                                    image: "https://jcass149.github.io/IMAGES/ImageProcessing.PNG",
+                                    description: "For this project, the task was to apply multiple image processing algorithms to transform once\
+                        seemingly empty images into something useful. Please see 'Image Processing Summative.pdf' in the\
+                        GitHub repository to see the process.",
+                                    link: "https://github.com/JCass149/ImageProcessing",
+                                    created: "2017",
+                                    tags: ["Python", "OpenCV"]
+                                },
+                                {
+                                    title: "Hex Board Game",
+                                    image: "https://jcass149.github.io/IMAGES/HexGame2.png",
+                                    description: "Creating the board game involved writing algorithms that would detect whether a move was legible,\
+                        and whether it would lead to a player winning the game. The real challenge however, was building an\
+                        intelligent computer player to play against.",
+                                    link: "https://github.com/JCass149/HexBoardGame",
+                                    created: "2016",
+                                    tags: ["Java", "AI"]
+                                },
+                                {
+                                    title: "Personal Medication Application",
+                                    image: "https://jcass149.github.io/IMAGES/PMA.PNG",
+                                    description: "The focus of this project was about user interaction with a system, and how to efficiently and\
+                        effectively display information. The Application may be run by downloading the files and running the\
+                        'run.bat' file. GUI information can be found in the 'Report.pdf'.",
+                                    link: "https://github.com/JCass149/PersonalMedicationApp",
+                                    created: "2017",
+                                    tags: ["Java"]
+                                },
+                                {
+                                    title: "Computer Vision",
+                                    image: "https://jcass149.github.io/IMAGES/CV.PNG",
+                                    description: "This computer vision assignment focused on gaining an understanding of how algorithms like RANSAC are\
+                        used with disparity in OpenCV to perform edge detection and outline road surfaces.",
+                                    link: "https://www.youtube.com/watch?v=V0rPmJLNBYA",
+                                    created: "2018",
+                                    tags: ["Python", "OpenCV"]
+                                },
+                                {
+                                    title: "Web Programming",
+                                    image: "https://jcass149.github.io/IMAGES/FAQ.PNG",
+                                    description: "Involved creating a PHP web REST service for a FAQ's page on the University servers. This\
+                        included writting a single page HTML web app for user and administrative access with\
+                        authentication using SHA256 string encoding for POST actions. The page also included sentiment\
+                        analysis from tweets pulled using the Twitter API.",
+                                    link: "https://github.com/JCass149/WebProgramming",
+                                    created: "2017",
+                                    tags: ["HTML", "CSS", "JavaScript", "PHP", "NodeJS"]
+                                },
+                                {
+                                    title: "Group Project",
+                                    image: "https://jcass149.github.io/IMAGES/GP.png",
+                                    description: "Worked in a small team of 6 to produce a website to allow users to find and share unwanted food\
+                        in an attempt to help reduce food wastage. I worked as a front-end developer, and as a team we\
+                        used GitLab for coding concurrency.",
+                                    link: "https://github.com/JCass149/GroupProject",
+                                    created: "2017",
+                                    tags: ["HTML", "CSS", "JavaScript"]
+                                },
+                                {
+                                    title: "Computing Methodologies",
+                                    image: "https://jcass149.github.io/IMAGES/NAPP.PNG",
+                                    description: "Studied different numerical algorithms and implemented parallel programming to produce a system\
+                        that could efficiency simulate many bodies in space with the effects of gravitational attraction\
+                        and momentum preservation upon collision.",
+                                    link: "https://github.com/JCass149/ComputingMethodologies",
+                                    created: "2018",
+                                    tags: ["C", "C++"]
+                                },
+                                {
+                                    title: "XML Databases",
+                                    image: "https://jcass149.github.io/IMAGES/XQuery.PNG",
+                                    description: "Studied, mapped, and constructed data sources in XML format. Also created complex\
+                                    queries using both XPath and XQuery",
+                                    link: "https://github.com/JCass149/AdvancedDatabases",
+                                    created: "2018",
+                                    tags: ["XML"]
+                                },
+                                {
+                                    title: "Cloud Computing Business Report",
+                                    image: "https://jcass149.github.io/IMAGES/CloudComputing.PNG",
+                                    description: "Produced an extensive business-critical infrastructure migration document\
+                                    for an artificial company. This involved undertanding the needs of a company transitioning to\
+                                    cloud based systems, and researching the different cloud options avaiable to them, highlighting key benefits and risk.\
+                                    I also investigated the data management and protection issues along with the security threats of the different options,\
+                                    whilst also researching some contemporary trends in Cloud Computing ",
+                                    link: "https://github.com/JCass149/CloudComputing",
+                                    created: "2018",
+                                    tags: ["Cloud"]
+                                },
+                                {
+                                    title: "2",
+                                    image: "2",
+                                    description: "2",
+                                    link: "2",
+                                    created: "2",
+                                    tags: ["2"]
+                                },
+                            ];
 
-                    <!-- Blog Post -->
-                    <div class="card mb-4">
-                        <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-                        <div class="card-body">
-                            <h2 class="card-title">Post Title</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-                                aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis
-                                animi
-                                vero voluptate voluptatibus possimus, veniam magni quis!</p>
-                            <a href="#" class="btn btn-primary">Read More &rarr;</a>
-                        </div>
-                        <div class="card-footer text-muted">
-                            Posted on January 1, 2017 by <a href="#">Start Bootstrap</a>
-                        </div>
-                    </div>
+                        var str = ''
+
+                        projects.forEach(function (project) {
+                            str += '<div class="card mb-4">\
+                                        <img class="card-img-top" src="'+ project.image + '" alt="Card image cap">\
+                                            <div class="card-body">\
+                                                <h2 class="card-title" >'+ project.title + '</h2>\
+                                                    <p class="card-text">'+ project.description + '</p>\
+                                                    <a class="btn btn-primary" href="'+ project.link + '">View Project\
+                                                    <span class="glyphicon glyphicon-chevron-right"></span></a>\
+                                            </div>\
+                                            <div class="card-footer text-muted">\
+                                                Created '+ project.created + '. Tags: <a href="#">' + project.tags[0] + '</a>\
+                                            </div>\
+                                    </div>';
+                        });
+                        document.getElementById("projectsContainer").innerHTML = str;
+
+                    </script>
 
                     <!-- Pagination -->
                     <ul class="pagination justify-content-center mb-4">
